@@ -73,10 +73,10 @@ input#menu-hamburguesa:checked ~ ul{
 .content-header {
     display: flex;
     gap: 10px;
-    flex-direction: column;
+    flex-direction: column; 
     text-align: center;
     /* width: 90%; */
-    height: 650px;
+    height: 690px;
     margin: 0px 0px 20px 0px;
 }
 
@@ -88,18 +88,20 @@ input#menu-hamburguesa:checked ~ ul{
 
 .seccion1-header > img{
     width: 320px;
-    margin-top: 215px;
+    margin-top: 220px;
 }
 
 
 .seccion2-header{
     position:absolute;
+    align-self: center;
 }
 
 .seccion2-header > p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: left;
     margin-left: 10px;
+    color: #423F40;
 }
 
 .h1-title{
@@ -115,8 +117,8 @@ h2{
 
 .icon-header-flex{
     display: flex;
-    gap: 1.5rem;
-    top: 320px;
+    gap: 3rem;
+    top: 305px;
     /* position: absolute;
     position: relative; */
    
@@ -126,8 +128,8 @@ h2{
 
 .icon{
     /* Rirculo */
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: var(--principal-color);
     
@@ -157,12 +159,18 @@ h2{
 }
 
 .btn-contact{
-   padding: 10px;
-   background-color: var(--principal-color);
-   border: none;
-   font-size: 1rem;
-   width: 177px;
-   color: white;
+
+    padding: 15px;
+    background-color: var(--principal-color);
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    background-image: url(../images/mail_3.svg);
+    background-repeat: no-repeat;
+    background-position: left calc(50% - 93px) center;
+    background-size: 25px;
+    cursor: progress;
+    width: 80%;
 
 }
 
@@ -177,6 +185,9 @@ h2{
 
 .content-about > p{
     padding: .25rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #423F40;
 }
 
 .content-habilidad{
@@ -205,16 +216,16 @@ h2{
 }
 
 .article{
-    /* background-color: var(--cream);
-    padding: 1rem;
-    margin: 5px 20px;
-    text-align: justify;*/
+
+    /* text-align: justify;*/
     background-color: var(--cream);
     padding: 1rem;
     margin: 5px 20px;
-    text-align: justify;
-    width: 220px;
-    min-width: 220px;
+     /* text-align: justify;*/
+    text-align: left;
+    width: 250px;
+    min-width: 250px;
+    height: 400px;
 }
 
 .art-title{
@@ -222,6 +233,19 @@ h2{
     display: flex;
     gap: 10px;
     justify-content: center;
+    padding: 0px 0px 15px 0px;
+}
+.art-title > span > img {
+  width: 20px;  
+}
+
+.art-img{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.art-img > div > img {
+    width: 100px;
 }
 
 /* experience */
@@ -245,7 +269,7 @@ h2{
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
-    gap: 1rem;
+    gap: 2rem;
     justify-items: center;
 }
 
@@ -261,7 +285,7 @@ h2{
     gap: 20px;
     /* Posicion */
     margin-right: 2rem;
-    width: 120px;
+    width: 160px;
     justify-content: center;
     align-items: center;
 }
@@ -271,7 +295,7 @@ h2{
     gap: 20px;
     /* Posicion */
     margin-left: 2rem;
-    width: 120px;
+    width: 160px;
     justify-content: center;
     align-items: center;
 }
@@ -298,7 +322,7 @@ footer {
     color: white;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 780px){
     label{
         display: none;
     }
@@ -310,6 +334,80 @@ footer {
         height: auto;
         justify-content: flex-end;
         
+    }
+
+    body {
+        width: 1200px;
+        margin: auto;
+    } 
+    .content-header{
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        text-align: center;
+        /* width: 90%; */
+        height: 520px;
+        margin: 0px 0px 20px 0px;
+
+    }
+
+    .seccion1-header {
+        position: relative;
+        width: 50%;
+    }
+
+    .seccion1-header > img {
+        width: 320px;
+        margin-top: 100px;
+    }
+    .seccion2-header{
+       position: relative;
+       width: 50%;
+    }
+    .seccion2-header {
+        position: relative;
+        margin-top: 35px;
+    }
+
+    .icon > img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .icon-header-flex {
+        display: flex;
+        gap: 3rem;
+        top: 30px;
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    .contact{
+        position: relative;
+        top: 80px;
+        text-align: left;
+    }
+
+    .experience {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px 0;
+        width: 30%;
+    }
+    .experience > div > img {
+        width: 65px;
+    }
+
+    .seccion-abil-flex{
+        justify-content: center;
+    }
+    .seccion-art-grid{
+ 
+        display: flex;
+        gap: 35px;
+
     }
 
 }
