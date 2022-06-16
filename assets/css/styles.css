@@ -12,6 +12,11 @@ Para generar formas basica en CSS
     box-sizing: border-box;
 }
 
+html{ 
+    scroll-behavior: smooth;
+}
+
+
 :root{
     --principal-color: #8E7BEF;
     --accent-color: #5D3BEF;
@@ -30,6 +35,17 @@ body{
 .text-centre{
     text-align: center;
 }
+
+a:link {
+    text-decoration: none;
+    color:#423F40;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: #423F40;
+  }
+
 
 /*menu*/
 nav{
